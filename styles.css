@@ -195,7 +195,8 @@ nav {
   gap: 20px;  
   align-items: left;
   padding-top: 50px;
-    border-top: 1px solid #fcfafa; /* line below */
+     border-top: 1px solid #5d5d5d; /* line below */
+ /* line below */
 
 }
 .container-ttl{
@@ -216,7 +217,28 @@ nav {
 
 .top-cont{
   gap: 20px;  
-  border-top: 1px solid #fcfafa; /* line below */
+  border-top: 1px solid #5d5d5d; /* line below */
+}
+.cont1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cont1 .container-content{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-cont{
+  display: flex;
+  flex-direction: column;
+}
+.cont1 .container-content1{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
