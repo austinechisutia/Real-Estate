@@ -258,23 +258,119 @@ nav {
  
 
 }
-.left-section{
+.left-section, .llft{
   display: flex;
   justify-content: space-between;
   gap: 70px;
   margin-top: 50px;
   padding: 20px;
   border-top: 1px solid #5d5d5d; /* line below */
-  padd
 }
-.left-section img {
-  width: 50%;
+
+.llft{
+   display: grid;
+  grid-auto-flow: column; /* makes it flow like a row */
+  grid-auto-columns: 1fr; /* each item takes equal space */
+  justify-content: space-between;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right img {
+  width: 100%;
   height: auto; /* keeps aspect ratio */
   display: block;
   border-radius: 10px; /* optional rounded corners */
    animation: bowIn 2.5s ease forwards; /* 1.5 seconds */
    
 }
+
+.firstName input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 10px;
+  border: none;  
+  margin-bottom: 20px;              /* remove all borders */
+  border-bottom: 1px solid #5d5d5d; /* keep only bottom border (line) */
+  outline: none;               /* remove blue outline on focus */
+  background: transparent;     /* remove default background */
+  font-size: 16px;             /* adjust text size */
+  padding: 20px 0;              /* some spacing */
+  width: 100%;                 /* make it expand full width */
+}
+
+.firstName input:focus {
+  border-bottom-color: #007BFF; /* change color on focus (blue) */
+}
+
+.context{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer {
+  
+  font-size: 13px;
+  display: flex;
+   justify-content: space-between; /* ✅ spreads items left, center, right */
+  align-items: center;   
+  justify-content: space-between; /* spread sections across */
+  align-items: flex-start;
+  color: #fff;
+  margin-top: 50px;
+  padding: 20px 40px;
+}
+
+.footer-section {
+  flex: 1;          /* make each take equal width */
+  margin: 0 20px;   /* spacing between sections */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-section {
+    margin: 15px 0;
+  }
+}
+
+.footer-section:first-child {
+  text-align: left;   /* ✅ align left section */
+}
+
+.footer-section:last-child {
+  text-align: right;  /* ✅ align right section */
+}
+
 
 
 
