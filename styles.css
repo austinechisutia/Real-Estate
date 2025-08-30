@@ -240,6 +240,33 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.nai{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #5d5d5d; /* line below */
+
+
+}
+.num{
+  text-align: right;
+}
+.two{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid #5d5d5d; /* line below */
+
+}
+.two img {
+  width: 50%;
+  height: auto; /* keeps aspect ratio */
+  display: block;
+  border-radius: 10px; /* optional rounded corners */
+   animation: bowIn 2.5s ease forwards; /* 1.5 seconds */
+}
 
 
 
