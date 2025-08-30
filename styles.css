@@ -255,18 +255,28 @@ nav {
 .two{
   display: flex;
   justify-content: space-between;
+ 
+
+}
+.left-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
   margin-top: 50px;
   padding: 20px;
   border-top: 1px solid #5d5d5d; /* line below */
-
+  padd
 }
-.two img {
+.left-section img {
   width: 50%;
   height: auto; /* keeps aspect ratio */
   display: block;
   border-radius: 10px; /* optional rounded corners */
    animation: bowIn 2.5s ease forwards; /* 1.5 seconds */
+   
 }
+
+
 
 
 
